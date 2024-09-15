@@ -191,8 +191,7 @@ MIDDLEWARE = [
 ]
 
 CORS_ALLOWED_ORIGINS = [
-    "http://localhost:5173",
-    "https://fruitai-1-qbds.onrender.com"  # React frontend
+    "http://localhost:5173",  # React frontend
 ]
 
 ROOT_URLCONF = 'fruitai.urls'
