@@ -160,7 +160,7 @@ SECRET_KEY = os.getenv('SECRET_KEY', 'django-insecure-t@cbyxvv#c0ath)j%*r_@4e5_i
 # Determine the environment (development or production)
 if os.getenv('RENDER'):  # Render environment
     DEBUG = False
-    ALLOWED_HOSTS = ['fruitai-2nlh.onrender.com']  # Update with your Render domain
+    ALLOWED_HOSTS = ['']  # Update with your Render domain
 else:  # Local development
     DEBUG = True
     ALLOWED_HOSTS = ['localhost', '127.0.0.1', '[::1]']
@@ -192,7 +192,6 @@ MIDDLEWARE = [
 
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:5173",  # React frontend
-    "https://fruitai19.netlify.app"
 ]
 
 ROOT_URLCONF = 'fruitai.urls'
