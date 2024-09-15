@@ -160,7 +160,7 @@ SECRET_KEY = os.getenv('SECRET_KEY', 'django-insecure-t@cbyxvv#c0ath)j%*r_@4e5_i
 # Determine the environment (development or production)
 if os.getenv('RENDER'):  # Render environment
     DEBUG = False
-    ALLOWED_HOSTS = ['']  # Update with your Render domain
+    ALLOWED_HOSTS = ['fruitai-1-qbds.onrender.com']  # Update with your Render domain
 else:  # Local development
     DEBUG = True
     ALLOWED_HOSTS = ['localhost', '127.0.0.1', '[::1]']
@@ -191,7 +191,8 @@ MIDDLEWARE = [
 ]
 
 CORS_ALLOWED_ORIGINS = [
-    "http://localhost:5173",  # React frontend
+    "http://localhost:5173",
+    "https://fruitai-1-qbds.onrender.com"  # React frontend
 ]
 
 ROOT_URLCONF = 'fruitai.urls'
